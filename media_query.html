@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1140px;
+            margin: 0 auto 50px;
+        }
+
+        .anime {
+            border: 2px solid tomato;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .anime img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .anime button {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: red;
+            font-weight: bold;
+        }
+
+        .anime button:hover {
+            background-color: lightslategray;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* media query */
+        /* smaller device */
+        @media screen and (max-width: 576px) {
+            .logo img {
+                width: 300px;
+            }
+
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .anime img {
+                height: 250px;
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .logo img {
+                width: 300px;
+            }
+
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <figure class="logo">
+        <img src="images/one_piece_logo.png" alt="One Piece logo">
+    </figure>
+    <!-- .container>.anime*15>img+h3{Character - $}+p{Bounty: \$$,000,000,000}+p{Dead or Alive}+p>lorem20^btn{Buy Now!} -->
+    <div class="container">
+        <div class="anime">
+            <img src="images/yamato.webp" alt="picture of Yamato">
+            <h3>Character - 1</h3>
+            <p>Bounty: $1,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis iste fuga dolore fugit voluptatum eius
+                vitae voluptatibus odio saepe perferendis.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Nami-egghead-outfit.webp" alt="picture of Nami">
+            <h3>Character - 2</h3>
+            <p>Bounty: $2,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Repellendus eius ullam doloremque hic asperiores id incidunt non ducimus, consequatur magnam tenetur
+                earum. Iure provident totam sapiente enim eum!</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Sir-Crocodile.webp" alt="picture of Sir Crocodile">
+            <h3>Character - 3</h3>
+            <p>Bounty: $3,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Dolorem omnis quia dolore, temporibus ducimus consequatur cupiditate atque animi! Laudantium, officia.
+                Ullam exercitationem sapiente iure eveniet illo accusantium dolor?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Boa-Hancock.webp" alt="picture of Boa Hancock">
+            <h3>Character - 4</h3>
+            <p>Bounty: $4,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Corrupti, dolorem. Praesentium quam, accusantium est aspernatur aliquid, illum temporibus iste sequi unde
+                nemo ipsa optio corrupti, quae aperiam exercitationem?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Katakuri.webp" alt="picture of Katakuri">
+            <h3>Character - 5</h3>
+            <p>Bounty: $5,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Praesentium incidunt distinctio culpa nemo, nisi aut vel quidem, hic aliquam nam sapiente sint quos
+                molestiae modi, laboriosam sed placeat.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Trafalgar-Law.webp" alt="picture of Trafalgar Law">
+            <h3>Character - 6</h3>
+            <p>Bounty: $6,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Inventore optio perferendis deleniti cumque at culpa amet. Veniam reprehenderit aliquam iste ad
+                asperiores animi, eum facere quae explicabo enim?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/zoro-with-his-swords.webp" alt="picture of Zoro">
+            <h3>Character - 7</h3>
+            <p>Bounty: $7,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Nam facilis, doloremque vel omnis magni dolores accusamus expedita ea nemo aperiam perspiciatis
+                necessitatibus harum tempore voluptatum id architecto debitis.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Portgas-D-Ace.webp" alt="picture of Portgas D. Ace">
+            <h3>Character - 8</h3>
+            <p>Bounty: $8,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Voluptas sapiente et repellendus suscipit non, fugit culpa explicabo ad earum, autem exercitationem
+                aperiam. Fuga molestias voluptas dolore pariatur delectus.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Shanks.webp" alt="picture of Shanks">
+            <h3>Character - 9</h3>
+            <p>Bounty: $9,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Praesentium, quae debitis, perspiciatis adipisci enim, tempora earum inventore pariatur eveniet ipsum
+                nisi autem deserunt culpa. Et mollitia similique debitis.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Whitebeard-in-Marineford.webp" alt="picture of Whitebeard">
+            <h3>Character - 10</h3>
+            <p>Bounty: $10,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Eum maiores a ea earum iste! Enim omnis, asperiores voluptas tempore eius dolores quod debitis ipsa
+                magni, porro sunt eum!</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Akainu.webp" alt="picture of Akainu">
+            <h3>Character - 11</h3>
+            <p>Bounty: $10,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Eum maiores a ea earum iste! Enim omnis, asperiores voluptas tempore eius dolores quod debitis ipsa
+                magni, porro sunt eum!</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Kaido.webp" alt="picture of Kaido">
+            <h3>Character - 12</h3>
+            <p>Bounty: $11,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Numquam sapiente fugiat natus ea! Repellat magnam doloremque delectus quos non qui, odio provident
+                possimus, accusamus, id quod magni? Facere.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Blackbeard.webp" alt="picture of Blackbeard">
+            <h3>Character - 13</h3>
+            <p>Bounty: $12,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Adipisci labore quod sequi molestias odit similique exercitationem nostrum itaque corrupti consequuntur?
+                Distinctio praesentium nisi deleniti accusantium architecto, ipsam est!</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Silvers-Rayleigh.webp" alt="picture of Silvers Rayleigh">
+            <h3>Character - 14</h3>
+            <p>Bounty: $13,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>In quis porro, laborum non, quo recusandae ullam libero eos ea soluta perferendis aliquid autem quod
+                expedita, maxime fugit officiis.</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Luffys-Hito-Hito-no-Mi-Model-Nika.webp" alt="picture of Luffy">
+            <h3>Character - 15</h3>
+            <p>Bounty: $14,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Similique unde debitis consequuntur dolor itaque fuga voluptatibus incidunt maiores sint accusamus
+                eligendi, magnam, quas ullam deleniti dolorum laborum quos!</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Gol-D.-Roger.webp" alt="picture of Gol D. Roger">
+            <h3>Character - 16</h3>
+            <p>Bounty: $15,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Rocks-D-Xebec.jpg" alt="picture of Rocks D. Xebec">
+            <h3>Character - 17</h3>
+            <p>Bounty: $15,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Monkey-D-Dragon.webp" alt="picture of Monkey D. Dragon">
+            <h3>Character - 18</h3>
+            <p>Bounty: $13,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Charlotte-Linlin.webp" alt="picture of Charlotte Linlin">
+            <h3>Character - 19</h3>
+            <p>Bounty: $10,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Imu.webp" alt="picture of Imu">
+            <h3>Character - 20</h3>
+            <p>Bounty: $20,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Mihawk.jpg" alt="picture of Mihawk">
+            <h3>Character - 21</h3>
+            <p>Bounty: $8,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Sabo.webp" alt="picture of Sabo">
+            <h3>Character - 22</h3>
+            <p>Bounty: $7,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Nefeltari-Vivi.jpg" alt="picture of Nefeltari Vivi">
+            <h3>Character - 23</h3>
+            <p>Bounty: $1,000,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+        <div class="anime">
+            <img src="images/Nico-Robin.jpg" alt="picture of Nico Robin">
+            <h3>Character - 24</h3>
+            <p>Bounty: $3,500,000,000</p>
+            <p>Dead or Alive</p>
+            <p>Ipsa iusto aliquid neque laudantium. Fugiat laboriosam hic qui sint, obcaecati recusandae nesciunt esse
+                repudiandae, error, quasi consequuntur quia molestiae?</p>
+            <button>Buy Now!</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
